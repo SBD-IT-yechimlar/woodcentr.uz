@@ -11,10 +11,32 @@ body {
   padding: 90px 0;
 }
 
+.logo {
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #6a4e23;
+  letter-spacing: 2px;
+  background: linear-gradient(45deg, #8b5a2b, #6a4e23); /* Wood-like gradient */
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  padding: 5px;
+  /* border-radius:  5px; */
+}
+
+.logo .suffix {
+  font-size: 25px;
+  color: #4b3621; /* Slightly lighter color for .uz */
+}
 
 .img-box-img{
   max-width: 360px;
-  max-height:240px;
+  max-height:250px;
+}
+.box-img{
+  max-width: 100px;
+  height: 100px;
 }
 .layout_padding2 {
   padding: 45px 0;
@@ -85,7 +107,8 @@ body {
 }
 
 .header_section {
-  background-color: #ffffff;
+  background-color: #d0b9a0;
+  position: relative;
 }
 
 .header_section .container-fluid {
@@ -97,6 +120,47 @@ body {
   margin: 0 auto;
 }
 
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 40px;
+}
+
+.dropdown-toggle {
+  padding: 10px 15px;
+
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #000;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
 .header_section .social_box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,9 +195,20 @@ body {
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 3px 15px;
   margin: 10px 15px;
-  color: #272727;
+  color: #fff2f2;
   text-align: center;
-  text-transform: uppercase;
+  font-weight:500;
+  color: #6a4e23;
+  letter-spacing: 2px;
+  background: linear-gradient(45deg, #8b5a2b, #6a4e23); /* Wood-like gradient */
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  padding: 5px;
+}
+.about-about{
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 a,
@@ -237,8 +312,7 @@ a:focus {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;

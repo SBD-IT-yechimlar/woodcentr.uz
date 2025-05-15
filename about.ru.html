@@ -36,13 +36,13 @@
 
   <div class="hero_area">
     <!-- header section strats -->
-    <header class="header_section ">
+    <header class="header_section">
       <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
-            <span>
-              Woodcentr.uz
-            </span>
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="assets/img/logo.png" alt=""> -->
+            <h1 class="logo">Woodcenter<span class="suffix">.uz</span></h1>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""> </span>
@@ -50,34 +50,27 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item ">
-                  <a class="nav-link" href="index.html">Home </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="service.html"> Services </a>
-                </li>
+              <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="contact.html">Contact Us <span class="sr-only">(current)</span> </a>
+                  <a class="nav-link" href="./service.ru.html">Главная <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./service.ru.html">Каталог</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.ru.html">О нас</a>
                 </li>
               </ul>
             </div>
-            <div class="social_box">
-              <a href="">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-youtube-play" aria-hidden="true"></i>
-              </a>
+
+            <div class="dropdown">
+              <div class="dropdown-toggle">
+                <i class="fa fa-globe" aria-hidden="true"></i> <span id="current-lang">Русский</span>
+              </div>
+              <div class="dropdown-menu">
+                <a href="index.ru.html">Русский</a>
+                <a href="index.html">O'zbekcha</a>
+              </div>
             </div>
           </div>
         </nav>
@@ -86,65 +79,45 @@
     <!-- end header section -->
   </div>
 
-  <!-- contact section -->
-  <section class="contact_section layout_padding ">
+  <!-- about section -->
+
+  <section class="about_section layout_padding-bottom about-about">
     <div class="container">
-      <div class="heading_container">
-        <h2>
-          Contact Us
-        </h2>
-      </div>
       <div class="row">
         <div class="col-md-6">
-          <div class="form_container">
-            <form action="">
-              <div>
-                <input type="text" placeholder="Your Name" />
-              </div>
-              <div>
-                <input type="text" placeholder="Phone Number" />
-              </div>
-              <div>
-                <input type="email" placeholder="Email" />
-              </div>
-              <div>
-                <input type="text" class="message-box" placeholder="Message" />
-              </div>
-              <div class="btn_box">
-                <button>
-                  SEND
-                </button>
-              </div>
-            </form>
+          <div class="img-box">
+            <img src="images/about-img.jpg" alt="" />
           </div>
         </div>
         <div class="col-md-6">
-          <div class="map_container">
-            <div class="map">
-              <div id="googleMap"></div>
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>О нас</h2>
             </div>
+            <p>
+              Мы, компания Woodcenter, являемся ведущим поставщиком высококачественных LMDF, MDF и других деревянных материалов. Нашим приоритетом является обеспечение качества и предоставление нашим клиентам лучших услуг в процессе производства мебели. Каждый заказ изготавливается индивидуально и разрабатывается в соответствии с потребностями клиента.
+            </p>
+            <a href="">Подробнее</a>
           </div>
         </div>
+
       </div>
     </div>
   </section>
-  <!-- end contact section -->
+  <!-- end about section -->
 
   <!-- info section -->
-  <section class="info_section ">
-
+  <section class="info_section">
     <div class="container">
-      <div class="info_top ">
-        <div class="row ">
+      <div class="info_top">
+        <div class="row">
           <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="info_detail">
               <a href="index.html">
-                <h4>
-                  Woodcentr.uz
-                </h4>
+                <h4>Woodcentr.uz</h4>
               </a>
               <p>
-                Soluta odit exercitationem rerum aperiam eos consectetur impedit delectus qui reiciendis, distinctio, asperiores fuga labore a? Magni natus.
+                Наши страницы в социальных сетях
               </p>
               <div class="social_box">
                 <a href="">
@@ -164,65 +137,34 @@
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
             <h4>
-              Contact us
+              Свяжитесь с нами
             </h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit
+              Если у вас есть вопросы или предложения по нашим услугам и продуктам, свяжитесь с нами.
             </p>
             <div class="contact_nav">
-              <a href="">
+              <a href="https://maps.windows.com/?form=WNAMSH&lvl=15.528171&cp=41.261189~69.340481&sty=r&trfc=0" target="_blank">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
+                <span>Ташкент, Яшнабадский район, мкр. Йош авлод, улица Уйсозлар, дом 45</span>
               </a>
-              <a href="">
+              <a href="tel:+998957952025">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call : +01 123455678990
-                </span>
+                <span> Тел : +998 95 795 20 25</span>
               </a>
-              <a href="">
+              <a href="mailto:woodcentrinfo.@gmail.com">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  Email : demo@gmail.com
-                </span>
+                <span>Email: woodcentrinfo.@gmail.com</span>
               </a>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="info_form">
-              <h4>
-                SIGN UP TO OUR NEWSLETTER
-              </h4>
-              <form action="">
-                <input type="text" placeholder="Enter Your Email" />
-                <button type="submit">
-                  Subscribe
-                </button>
-              </form>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
   </section>
   <!-- end info_section -->
 
-
-  <!-- footer section -->
-  <footer class="footer_section">
-    <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
-      </p>
-    </div>
-  </footer>
-  <!-- footer section -->
-
-
-  <!-- jQery -->
+  <!-- jQuery -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <!-- bootstrap js -->
   <script src="js/bootstrap.js"></script>
