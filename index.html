@@ -362,30 +362,29 @@
     <section class="contact_section layout_padding">
       <div class="container">
         <div class="heading_container">
-          <h2>Contact Us</h2>
+          <h2>Biz bilan Bog'laning</h2>
         </div>
         <div class="row">
           <div class="col-md-6">
             <div class="form_container">
-              <form action="">
+              <form action="" method="POST">
                 <div>
-                  <input type="text" placeholder="Your Name" />
+                  <input type="text" placeholder="Ismingiz" required />
                 </div>
                 <div>
-                  <input type="text" placeholder="Phone Number" />
+                  <input type="text" placeholder="Telefon Raqamingiz" required />
                 </div>
                 <div>
-                  <input type="email" placeholder="Email" />
+                  <input type="email" placeholder="Email Manzilingiz" required />
                 </div>
                 <div>
                   <input
-                    type="text"
-                    class="message-box"
-                    placeholder="Message"
-                  />
-                </div>
+                  type="text"
+                  class="message-box"
+                  placeholder="Message"
+                />                </div>
                 <div class="btn_box">
-                  <button>SEND</button>
+                  <button type="submit">YUBORISH</button>
                 </div>
               </form>
             </div>
@@ -393,13 +392,17 @@
           <div class="col-md-6">
             <div class="map_container">
               <div class="map">
-                <div id="googleMap"></div>
+                <!-- Google Map -->
+                <div id="googleMap" style="width:100%; height:400px;"></div>
+
+                <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=myMap" async defer></script>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- end contact section -->
 
     <!-- client section -->
@@ -407,7 +410,7 @@
     <section class="client_section layout_padding-bottom">
       <div class="container">
         <div class="heading_container heading_center psudo_white_primary mb_45">
-          <h2>What Says Our Customers</h2>
+          <h2>Mijozlar fikri</h2>
         </div>
         <div class="carousel-wrap row">
           <div class="owl-carousel client_owl-carousel">
@@ -418,12 +421,10 @@
                 </div>
                 <div class="detail-box">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam
+                    "Woodcenter xizmatlaridan foydalanganimdan juda mamnunman. Ularning LMDF va MDF materiallari juda sifatli va yuqori tezlikda yetkazib berildi. Mahsulotlarimni xavfsiz va o'z vaqtida oldim. Kelajakda yana ularni tanlayman!"
                   </p>
-                  <h6>Klark Smith</h6>
-                  <p>magna aliqua</p>
+                  <h6>Klark Smit</h6>
+                  <p>Bizning mijozimiz, Tashkent</p>
                 </div>
               </div>
             </div>
@@ -434,12 +435,10 @@
                 </div>
                 <div class="detail-box">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam
+                    "Woodcenter kompaniyasining professional va do'stona xizmati menga juda yoqdi. Mebel ishlab chiqarish uchun kerakli materiallar o'z vaqtida yetkazib berildi va ular sifatli bo'ldi. Yana ishlashni kutyapman."
                   </p>
-                  <h6>Jessica Hawk</h6>
-                  <p>magna aliqua</p>
+                  <h6>Jessika Xok</h6>
+                  <p>Bizning mijozimiz, Samarkand</p>
                 </div>
               </div>
             </div>
@@ -447,6 +446,7 @@
         </div>
       </div>
     </section>
+
 
     <!-- end client section -->
 
@@ -499,15 +499,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="info_form">
-                <h4>SIGN UP TO OUR NEWSLETTER</h4>
-                <form action="">
-                  <input type="text" placeholder="Enter Your Email" />
-                  <button type="submit">Subscribe</button>
-                </form>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
