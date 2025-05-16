@@ -31,8 +31,8 @@ body {
 }
 
 .img-box-img{
-  max-width: 360px;
-  max-height:250px;
+  max-width: 370px;
+  max-height:240px;
 }
 .box-img{
   max-width: 100px;
@@ -57,6 +57,49 @@ body {
 .layout_padding-bottom {
   padding-bottom: 90px;
 }
+
+
+
+
+
+
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+  background: #fff;
+  padding: 30px 0;
+  border-top: 3px solid gold;
+}
+
+.slider {
+  display: flex;
+  width: fit-content;
+  animation: scroll 30s linear infinite;
+}
+
+.slider img {
+  height: 100px;
+  margin: 0 40px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.slider img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
 
 .heading_container {
   display: -webkit-box;
