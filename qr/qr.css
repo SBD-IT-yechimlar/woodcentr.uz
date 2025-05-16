@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+body::before{
+  filter: blur(4px);
+  z-index: -2 ;
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/images/mdf_img.avif') no-repeat center center;
+  background-size: cover;
+}
+
+.container {
+  background-color: #829091 ;
+  border-radius: 12px;
+  padding: 30px 20px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+background-image: url('/images/wood_bg.jpg');
+}
+
+
+.logo {
+  width: 180px;
+  margin: 0 auto 5px;
+}
+
+.logo img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+p {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.icons {
+  margin-bottom: 20px;
+  /* display: flex; */
+  background-color: transparent;
+  width: 50px;
+  height: auto;
+}
+
+.icons a {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #555;
+  transition: 0.3s;
+}
+
+
+
+.button {
+  display: block;
+  width: 100%;
+  background: #f3f3f3;
+  color: #333;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #7f5b26;
+  color: #fff;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+  }
+}
+.logo{
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+}
