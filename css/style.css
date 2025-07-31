@@ -1,10 +1,32 @@
 /* fonts import */
-@import url("../fonts/octin_sports_rg.ttf");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary-color: #1a1a1a;
+  --secondary-color: #ff6b35;
+  --accent-color: #f7931e;
+  --text-dark: #212529;
+  --text-light: #6c757d;
+  --bg-light: #f8f9fa;
+  --bg-white: #ffffff;
+  --border-color: #e9ecef;
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: "Poppins", sans-serif;
-  color: #0c0c0c;
-  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-white);
   overflow-x: hidden;
+  line-height: 1.6;
+  font-size: 16px;
 }
 
 .layout_padding {
@@ -150,8 +172,20 @@ body {
 }
 
 .header_section {
-  background-color: #d0b9a0;
-  position: relative;
+  background-color: var(--bg-white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.header_section.scrolled {
+  box-shadow: var(--shadow-md);
 }
 
 .header_section .container-fluid {
@@ -169,35 +203,64 @@ body {
   position: relative;
   display: inline-block;
   cursor: pointer;
-  margin-right: 40px;
+  margin-left: 30px;
 }
 
 .dropdown-toggle {
-  padding: 10px 15px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: var(--bg-light);
+  color: var(--text-dark);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition);
+}
 
+.dropdown-toggle:hover {
+  background: #e9ecef;
+  transform: translateY(-1px);
 }
 
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
-  min-width: 150px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 160px;
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-lg);
+  border-radius: 12px;
+  overflow: hidden;
   z-index: 10;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .dropdown-menu a {
   display: block;
-  padding: 10px 15px;
+  padding: 12px 20px;
   text-decoration: none;
-  color: #000;
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: var(--transition);
 }
 
 .dropdown-menu a:hover {
+  background: var(--bg-light);
+  color: var(--secondary-color);
   background-color: #f0f0f0;
 }
 
@@ -396,8 +459,8 @@ a:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(47, 37, 25, 0.85)), to(rgba(47, 37, 25, 0.55)));
-  background: linear-gradient(to right, rgba(47, 37, 25, 0.85), rgba(47, 37, 25, 0.55));
+  /* background: -webkit-gradient(linear, left top, right top, from(rgba(47, 37, 25, 0.85)), to(rgba(47, 37, 25, 0.55))); */
+  /* background: linear-gradient(to right, rgba(47, 37, 25, 0.85), rgba(47, 37, 25, 0.55)); */
 }
 
 .slider_section .row {

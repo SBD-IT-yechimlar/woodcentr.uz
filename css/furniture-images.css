@@ -1,0 +1,129 @@
+/* Modern Furniture Images and Backgrounds */
+
+/* Hero Section with Modern Furniture Background */
+.slider_section {
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.9) 0%, rgba(45, 45, 45, 0.8) 100%);
+}
+
+/* Alternative hero backgrounds for carousel items - Workers with LMDF */
+.carousel-item:nth-child(1) .slider_bg_box {
+  /* Carpenter working on LMDF furniture cutting */
+  background: url('https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=2086') center/cover;
+}
+
+.carousel-item:nth-child(2) .slider_bg_box {
+  /* Craftsman assembling LMDF cabinets */
+  background: url('https://images.unsplash.com/photo-1571945192246-604e8e5d5a5f?q=80&w=2070') center/cover;
+}
+
+.carousel-item:nth-child(3) .slider_bg_box {
+  /* Worker polishing LMDF furniture surface */
+  background: url('https://images.unsplash.com/photo-1609205807589-6f369e6621f0?q=80&w=2070') center/cover;
+}
+
+/* Service Section - Modern Furniture Materials */
+.service_section .b1 .img-box {
+  background: url('https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=2127') center/cover;
+  height: 250px;
+}
+
+.service_section .b2 .img-box {
+  background: url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=2080') center/cover;
+  height: 250px;
+}
+
+.service_section .b3 .img-box {
+  background: url('https://images.unsplash.com/photo-1581539250439-c96689b516dd?q=80&w=2065') center/cover;
+  height: 250px;
+}
+
+/* About Section - Modern Workshop/Showroom */
+.about_section .img-box {
+  background: url('https://images.unsplash.com/photo-1560448204-603b3fc33ddc?q=80&w=2070') center/cover;
+  height: 500px;
+  position: relative;
+}
+
+/* Work Section - Various Furniture and LMDF Materials in Different Colors */
+.work_section .item:nth-child(1) .img-box-img {
+  /* White LMDF kitchen cabinets - modern minimalist */
+  background: url('https://images.unsplash.com/photo-1556912167-f556f1f39faa?q=80&w=2081') center/cover;
+}
+
+.work_section .item:nth-child(2) .img-box-img {
+  /* Dark brown LMDF bedroom furniture set */
+  background: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=2070') center/cover;
+}
+
+.work_section .item:nth-child(3) .img-box-img {
+  /* Gray LMDF office furniture - modern workspace */
+  background: url('https://images.unsplash.com/photo-1524634126442-357e0eac3c14?q=80&w=2070') center/cover;
+}
+
+.work_section .item:nth-child(4) .img-box-img {
+  /* Beige/Natural wood tone LMDF living room set */
+  background: url('https://images.unsplash.com/photo-1565182999561-18d7dc61c393?q=80&w=2070') center/cover;
+}
+
+/* Additional work items for more variety */
+.work_section .item:nth-child(5) .img-box-img {
+  /* Colorful LMDF material samples - showing variety */
+  background: url('https://images.unsplash.com/photo-1565117650966-eb690a3824e2?q=80&w=2070') center/cover;
+}
+
+.work_section .item:nth-child(6) .img-box-img {
+  /* Black LMDF wardrobe with glossy finish */
+  background: url('https://images.unsplash.com/photo-1489171078254-c3365d6e359f?q=80&w=2070') center/cover;
+}
+
+.work_section .item:nth-child(7) .img-box-img {
+  /* Light oak LMDF bathroom vanity */
+  background: url('https://images.unsplash.com/photo-1604709177225-055f99402ea3?q=80&w=2070') center/cover;
+}
+
+.work_section .item:nth-child(8) .img-box-img {
+  /* Red/burgundy LMDF restaurant furniture */
+  background: url('https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=2074') center/cover;
+}
+
+/* Client testimonial placeholders */
+.client_section .item:nth-child(1) .img-box {
+  background: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&h=200') center/cover;
+}
+
+.client_section .item:nth-child(2) .img-box {
+  background: url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200') center/cover;
+}
+
+/* Modern pattern overlay for sections */
+.service_section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.03"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+  pointer-events: none;
+}
+
+/* Furniture texture backgrounds */
+.wood-texture {
+  background-image: url('https://images.unsplash.com/photo-1541123044633-10c4f81e7fdb?q=80&w=2070');
+  background-blend-mode: multiply;
+  opacity: 0.1;
+}
+
+/* Hide old img tags and use background images instead */
+.service_section .img-box img,
+.work_section .img-box-img img,
+.about_section .img-box img {
+  display: flex;
+}
+
+/* Ensure proper sizing for background images */
+.img-box, .img-box-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
